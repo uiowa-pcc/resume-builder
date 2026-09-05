@@ -80,14 +80,15 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
         <div class="row">
           <div class="field"><label for="minor">Minor</label><input id="minor" placeholder="Spanish"></div>
           <div class="field"><label for="certificates">Certificate(s)</label><input id="certificates" placeholder="Writing; Public Health"></div>
-          <div class="field"><label for="gpa">GPA</label><input id="gpa" inputmode="decimal" placeholder="3.62"><div class="hint">Enter the number only; /4.0 will be added automatically.</div></div>
+          <div class="field"><label for="deansList">Dean's List</label><input id="deansList" placeholder="Fall 2026 - Spring 2028, Spring 2029"><div class="hint">Enter the terms exactly as you want them to appear.</div></div>
+          <div class="field"><label for="gpa">GPA</label><input id="gpa" inputmode="decimal" placeholder="3.62"><div class="hint">Enter the number only; /4.0 will be added automatically. Consider including your GPA if it is 3.0 or above.</div></div>
         </div>
       </details>
     </section>
 
     <section class="panel">
       <div class="eyebrow">2 · Experiences</div><h2>Add experiences</h2>
-      <div class="notice"><strong>Your resume sections are unique to you.</strong>Use only the section names that help organize <em>your</em> experiences. You do not need every section, and your section order can be different from someone else's. Put the experience section most relevant to your goals higher.</div>
+      <div class="notice"><strong>Your resume sections are unique to you.</strong>Use only the section names that help organize <em>your</em> experiences. You do not need every section, and your section order can be different from someone else's. When applying for a specific opportunity, place the section with your most relevant experience higher on the resume.</div>
       <p class="hint">Paid work is only one option. You can include internships, leadership, involvement, volunteering, research, projects, athletics, teaching/clinical/field work, and other relevant experiences.</p>
       <details class="inline-help"><summary>Not sure what counts as experience? Show ideas</summary>
         <div class="idea-grid" id="ideaGrid"></div>
@@ -98,7 +99,7 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
       <div class="hint">If you use more than one experience section, you can arrange their order after you add them.</div>
       <div id="sectionOrderWrap" class="section-order-wrap hidden" aria-live="polite">
         <h3>Arrange your experience sections</h3>
-        <p class="hint">Use Move up / Move down to choose the order that best highlights your background. Experiences within each section will still be placed in reverse chronological order.</p>
+        <p class="hint">Use Move up / Move down to choose the order that best highlights your background. When applying, emphasize your most relevant experience by moving that section higher. Experiences within each section will still be placed in reverse chronological order.</p>
         <div id="sectionOrderList" class="section-order-list"></div>
       </div>
     </section>
@@ -108,9 +109,9 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
       <p class="hint">Add specific technical tools or spoken languages. Do not list general qualities such as communication or teamwork here.</p>
       <details id="skillsDetails"><summary><strong>+ Add Computer Skills or Languages</strong></summary>
         <h3 style="margin-top:14px">Computer Skills</h3>
-        <div class="field"><label for="programmingLanguages">Programming / computer languages</label><input id="programmingLanguages" placeholder="Python, Java, SQL"><div class="hint">On the resume this appears as <strong>Languages:</strong> under Computer Skills.</div></div>
-        <div class="field"><label for="operatingSystems">Operating Systems</label><input id="operatingSystems" placeholder="Windows, macOS, Linux"></div>
-        <div class="field"><label for="software">Software</label><input id="software" placeholder="Microsoft Excel, SPSS, Adobe Photoshop"></div>
+        <div class="field"><label for="programmingLanguages">Programming / computer languages</label><input id="programmingLanguages" placeholder="SQL, C++, Java, Ruby, Python, HTML5, CSS"><div class="hint">On the resume this appears as <strong>Languages:</strong> under Computer Skills.</div></div>
+        <div class="field"><label for="operatingSystems">Operating Systems</label><input id="operatingSystems" placeholder="UNIX, Windows, LINUX, Mac OS X"></div>
+        <div class="field"><label for="software">Software</label><input id="software" placeholder="Microsoft Access, Adobe Acrobat"></div>
         <h3 style="margin-top:16px">Languages</h3>
         <div class="field"><label for="spokenLanguages">Spoken / written languages</label><input id="spokenLanguages" placeholder="Spanish (conversational)"><div class="hint">Use this for languages such as Spanish or Arabic—not programming languages.</div></div>
       </details>
@@ -160,13 +161,13 @@ const competencies={
   'Technology':['Created','Operated','Updated','Tracked','Designed','Automated']
 };
 const focusAreas={
-  'Communicate or help others':{competency:'Communication',verbs:['Communicated','Explained','Guided','Responded','Supported','Advised']},
-  'Solve problems or analyze':{competency:'Critical Thinking',verbs:['Analyzed','Resolved','Evaluated','Identified','Investigated','Improved']},
-  'Organize or lead':{competency:'Leadership',verbs:['Led','Coordinated','Organized','Directed','Delegated','Mentored']},
-  'Work with a team':{competency:'Teamwork',verbs:['Collaborated','Partnered','Supported','Contributed','Coordinated','Assisted']},
-  'Manage responsibilities':{competency:'Professionalism',verbs:['Managed','Prioritized','Maintained','Completed','Prepared','Delivered']},
-  'Use technology or create':{competency:'Technology',verbs:['Created','Designed','Updated','Tracked','Operated','Automated']},
-  'Learn, adapt, or improve':{competency:'Career & Self-Development',verbs:['Developed','Improved','Learned','Adapted','Pursued','Sought']}
+  'Career & Self-Development':{competency:'Career & Self-Development',verbs:['Developed','Improved','Learned','Adapted','Pursued','Sought']},
+  'Communication':{competency:'Communication',verbs:['Communicated','Explained','Guided','Responded','Supported','Advised']},
+  'Critical Thinking':{competency:'Critical Thinking',verbs:['Analyzed','Resolved','Evaluated','Identified','Investigated','Improved']},
+  'Teamwork':{competency:'Teamwork',verbs:['Collaborated','Partnered','Supported','Contributed','Coordinated','Assisted']},
+  'Leadership':{competency:'Leadership',verbs:['Led','Coordinated','Organized','Directed','Delegated','Mentored']},
+  'Professionalism':{competency:'Professionalism',verbs:['Managed','Prioritized','Maintained','Completed','Prepared','Delivered']},
+  'Technology':{competency:'Technology',verbs:['Created','Designed','Updated','Tracked','Operated','Automated']}
 };
 const $=id=>document.getElementById(id);
 let data={version:3,fields:{},experiences:[],sectionOrder:[]};
@@ -205,7 +206,7 @@ function load(){
   data={version:3,fields:{},experiences:[defaultExp('','')],sectionOrder:[]};
 }
 function save(){
-  const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
+  const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','deansList','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
   ids.forEach(id=>{if($(id))data.fields[id]=$(id).value});
   syncSectionOrder();
   try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}catch(_){}
@@ -340,11 +341,12 @@ function orderedSections(groups){syncSectionOrder();const ordered=data.sectionOr
 function educationLine(){const degree=field('degree')==='Other'?field('otherDegree'):field('degree');return [degree,field('major')].filter(Boolean).join(' ')}
 function gradLine(){return [field('gradMonth'),field('gradYear')].filter(Boolean).join(' ')}
 function gpaLine(){const g=field('gpa').replace(/\/4\.0$/,'').trim();return g?`${g}/4.0`:''}
-function addressLine(){return [field('streetAddress'),[field('city'),capState(field('state'))].filter(Boolean).join(', ')].filter(Boolean).join(' | ')}
+function cityStateLine(){return [field('city'),capState(field('state'))].filter(Boolean).join(', ')}
+function streetAddressLine(){return [field('streetAddress'),cityStateLine()].filter(Boolean).join(' | ')}
 function renderPreview(){
-  let html='';const name=field('name');const contact=[field('email'),field('phone'),field('linkedin')].filter(Boolean).join(' | ');const addr=addressLine();
-  html+=`<div class="p-name">${escapeHtml((name||'YOUR NAME').toUpperCase())}</div>${contact?`<div class="p-contact">${escapeHtml(contact)}</div>`:''}${addr?`<div class="p-contact">${escapeHtml(addr)}</div>`:''}`;
-  if(field('school')||educationLine()){html+=`<div class="p-section">EDUCATION</div><div class="p-row"><span class="p-bold">${escapeHtml([field('school'),field('schoolLocation')].filter(Boolean).join(', '))}</span><span class="p-right">${gradLine()?`Anticipated ${escapeHtml(gradLine())}`:''}</span></div><div>${escapeHtml(educationLine())}</div>`;const eb=[];if(field('minor'))eb.push(`Minor: ${field('minor')}`);if(field('certificates'))eb.push(`Certificate${field('certificates').includes(';')?'s':''}: ${field('certificates').replace(/;/g,', ')}`);if(gpaLine())eb.push(`GPA: ${gpaLine()}`);if(eb.length)html+=`<ul>${eb.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`}
+  let html='';const name=field('name');const cityState=cityStateLine();const hasStreet=!!field('streetAddress');const contact=[field('email'),field('phone'),...(!hasStreet&&cityState?[cityState]:[])].filter(Boolean).join(' | ');const linkedin=field('linkedin');const addr=hasStreet?streetAddressLine():'';
+  html+=`<div class="p-name">${escapeHtml((name||'YOUR NAME').toUpperCase())}</div>${contact?`<div class="p-contact">${escapeHtml(contact)}</div>`:''}${linkedin?`<div class="p-contact">${escapeHtml(linkedin)}</div>`:''}${addr?`<div class="p-contact">${escapeHtml(addr)}</div>`:''}`;
+  if(field('school')||educationLine()){html+=`<div class="p-section">EDUCATION</div><div class="p-row"><span class="p-bold">${escapeHtml([field('school'),field('schoolLocation')].filter(Boolean).join(', '))}</span><span class="p-right">${gradLine()?`Anticipated ${escapeHtml(gradLine())}`:''}</span></div><div>${escapeHtml(educationLine())}</div>`;const eb=[];if(field('minor'))eb.push(`Minor: ${field('minor')}`);if(field('certificates'))eb.push(`Certificate${field('certificates').includes(';')?'s':''}: ${field('certificates').replace(/;/g,', ')}`);if(field('deansList'))eb.push(`Dean's List: ${field('deansList')}`);if(gpaLine())eb.push(`GPA: ${gpaLine()}`);if(eb.length)html+=`<ul>${eb.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`}
   const groups=getGroups();orderedSections(groups).forEach(s=>{html+=`<div class="p-section">${escapeHtml(s.toUpperCase())}</div>`;groups[s].forEach(e=>{const bullets=(e.bullets||[]).map(noPeriod).filter(Boolean);html+=`<div class="p-exp"><div class="p-row"><span class="p-bold">${escapeHtml(e.title||'Experience Title')}</span><span class="p-right">${escapeHtml(dateLabel(e))}</span></div><div class="p-small">${escapeHtml([e.org,expLoc(e)].filter(Boolean).join(', '))}</div>${bullets.length?`<ul>${bullets.map(b=>`<li>${escapeHtml(b)}</li>`).join('')}</ul>`:'<div class="p-empty">Add bullets</div>'}</div>`})});
   if(field('programmingLanguages')||field('operatingSystems')||field('software')){html+=`<div class="p-section">COMPUTER SKILLS</div>${field('programmingLanguages')?`<div><span class="p-bold">Languages:</span> ${escapeHtml(field('programmingLanguages'))}</div>`:''}${field('operatingSystems')?`<div><span class="p-bold">Operating Systems:</span> ${escapeHtml(field('operatingSystems'))}</div>`:''}${field('software')?`<div><span class="p-bold">Software:</span> ${escapeHtml(field('software'))}</div>`:''}`}
   if(field('spokenLanguages'))html+=`<div class="p-section">LANGUAGES</div><div>${escapeHtml(field('spokenLanguages'))}</div>`;
@@ -371,13 +373,15 @@ function makeWordDocument(){
   const line=(runs=[],after=0,keep=false)=>new Paragraph({children:runs,spacing:{after},keepNext:keep,widowControl:true});
   const children=[];
   children.push(new Paragraph({children:[run(field('name').toUpperCase(),{bold:true,size:NAME})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
-  const contact=[field('email'),field('phone'),field('linkedin')].filter(Boolean).join(' | ');if(contact)children.push(new Paragraph({children:[run(contact,{size:SMALL})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
-  const addr=[field('streetAddress'),[field('city'),capState(field('state'))].filter(Boolean).join(', ')].filter(Boolean).join(' | ');if(addr)children.push(new Paragraph({children:[run(addr,{size:SMALL})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
+  const cityState=cityStateLine();const hasStreet=!!field('streetAddress');const contact=[field('email'),field('phone'),...(!hasStreet&&cityState?[cityState]:[])].filter(Boolean).join(' | ');if(contact)children.push(new Paragraph({children:[run(contact,{size:SMALL})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
+  const linkedin=field('linkedin');if(linkedin)children.push(new Paragraph({children:[run(linkedin,{size:SMALL})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
+  const addr=hasStreet?streetAddressLine():'';if(addr)children.push(new Paragraph({children:[run(addr,{size:SMALL})],alignment:AlignmentType.CENTER,spacing:{after:0},keepNext:true}));
   children.push(heading('Education'));
   children.push(rightLine([field('school'),field('schoolLocation')].filter(Boolean).join(', '),`Anticipated ${gradLine()}`,{leftBold:true}));
-  children.push(line([run(educationLine())],0,!!(field('minor')||field('certificates')||gpaLine())));
+  children.push(line([run(educationLine())],0,!!(field('minor')||field('certificates')||field('deansList')||gpaLine())));
   if(field('minor'))children.push(bullet(`Minor: ${field('minor')}`));
   if(field('certificates'))children.push(bullet(`Certificate${field('certificates').includes(';')?'s':''}: ${field('certificates').replace(/;/g,', ')}`));
+  if(field('deansList'))children.push(bullet(`Dean's List: ${field('deansList')}`));
   if(gpaLine())children.push(bullet(`GPA: ${gpaLine()}`));
 
   const groups=getGroups();orderedSections(groups).forEach(section=>{
@@ -403,7 +407,7 @@ $('downloadResume').addEventListener('click',async()=>{save();if(!validate())ret
 $('shareResume').addEventListener('click',async()=>{if(!lastDownloadFile)return;try{await navigator.share({files:[lastDownloadFile],title:'Resume',text:'My editable Word resume'});$('downloadStatus').textContent='Resume shared or saved.'}catch(err){if(err?.name!=='AbortError'){console.error(err);$('downloadStatus').textContent='Share was not available. Use Download .docx instead.'}}});
 
 function bindFields(){
-  const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
+  const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','deansList','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
   ids.forEach(id=>$(id).addEventListener('input',()=>{if(id==='state')$('state').value=capState($('state').value);save();renderPreview()}));
   $('degree').addEventListener('change',()=>{$('otherDegreeWrap').classList.toggle('hidden',$('degree').value!=='Other');save();renderPreview()});
 }
