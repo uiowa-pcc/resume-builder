@@ -26,14 +26,14 @@ button:disabled{opacity:.55;cursor:not-allowed}.secondary{background:#fff;color:
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.status{font-weight:700;margin-top:10px}.hidden{display:none!important}
 details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top:10px}details.inline-help summary{cursor:pointer;font-weight:700}.idea-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}.idea{border:1px solid #bbb;background:#fff;color:#111;text-align:left;padding:8px 10px;font-weight:600}
 .exp-card{border:1px solid var(--line);margin:14px 0}.exp-head{background:var(--light);padding:10px 12px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.exp-head strong{display:block}.exp-body{padding:12px}
-.section-select-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bullet-list{margin-top:8px}.bullet-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;margin:7px 0}.bullet-row button{padding:8px 10px;background:#fff;color:#111;border-color:#aaa}
-.helper{border:1px solid #cfcfcf;background:#fafafa;padding:13px;margin:12px 0}.helper h4{margin:0 0 5px;font-size:1rem}.competency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:9px 0}.choice{border:1px solid #bbb;background:#fff;color:#111;text-align:left;padding:8px 9px}.choice[aria-pressed=true]{background:#e7e7e7;border-color:#777}.verb-grid{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0 10px}.verb{background:#fff;color:#111;border-color:#aaa;padding:6px 8px;font-size:.83rem}.verb[aria-pressed=true]{background:#e7e7e7;border-color:#777}
+.section-select-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px}.section-order-wrap{border:1px solid var(--line);background:#fafafa;padding:13px;margin-top:14px}.section-order-wrap h3{margin:0 0 4px}.section-order-list{display:grid;gap:7px;margin-top:10px}.section-order-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;background:#fff;border:1px solid #cfcfcf;padding:8px 10px}.section-order-item strong{min-width:0}.order-actions{display:flex;gap:6px}.order-actions button{min-width:44px;min-height:44px;padding:6px 9px}.bullet-list{margin-top:8px}.bullet-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;margin:7px 0}.bullet-row button{padding:8px 10px;background:#fff;color:#111;border-color:#aaa}
+.helper{border:1px solid #cfcfcf;background:#fafafa;padding:13px;margin:12px 0}.helper h4{margin:0 0 5px;font-size:1rem}.helper-pattern{background:#fff;border-left:4px solid var(--yellow);padding:9px 10px;margin:8px 0 12px}.helper-pattern strong{display:block}.competency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:9px 0}.choice{border:1px solid #bbb;background:#fff;color:#111;text-align:left;padding:9px 10px;min-height:44px}.choice[aria-pressed=true]{background:#e7e7e7;border-color:#777}.verb-grid{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0 10px}.verb{background:#fff;color:#111;border-color:#aaa;padding:7px 9px;font-size:.83rem;min-height:40px}.verb[aria-pressed=true]{background:#e7e7e7;border-color:#777}.helper-preview{background:#fff;border:1px solid #bbb;padding:10px;margin:10px 0}.helper-preview strong{display:block;margin-bottom:4px}.helper-preview .empty-preview{color:#777;font-style:italic}.skill-note{font-size:.82rem;color:#666;margin:-2px 0 8px}
 .data-nudge{background:#fff;border-left:3px solid #999;padding:9px 10px;margin:8px 0}.data-nudge strong{display:block;margin-bottom:2px}.generated{background:#fff;border:1px solid #bbb;padding:10px;margin-top:10px}.generated strong{display:block;margin-bottom:4px}
 .optional-block{border-top:1px solid var(--line);margin-top:12px;padding-top:10px}.optional-block summary{cursor:pointer;font-weight:700}
 .preview-wrap{position:sticky;top:12px}.preview{border:1px solid var(--line);background:#fafafa;padding:16px}.preview h2{font-size:1rem;margin:0 0 4px}.preview-note{font-size:.83rem;color:#666;margin:0 0 12px}.p-name{text-align:center;font-weight:700;font-size:1.2rem}.p-contact{text-align:center;font-size:.86rem}.p-section{font-weight:700;margin:15px 0 3px}.p-row{display:flex;justify-content:space-between;gap:10px}.p-right{white-space:nowrap;text-align:right}.p-bold{font-weight:700}.p-exp{margin:0 0 12px}.p-exp ul{margin:3px 0 0;padding-left:18px}.p-small{font-size:.88rem}.p-empty{color:#777;font-style:italic}
-.download-box{background:#fafafa;border:2px solid #111;padding:16px}.download-box p{margin:.3rem 0 .8rem}.footer-note{font-size:.86rem;color:#666}
+.download-box{background:#fafafa;border:2px solid #111;padding:16px}.download-box p{margin:.3rem 0 .8rem}.save-options{border-top:1px solid #bbb;margin-top:14px;padding-top:12px}.mobile-save-note{display:none}.footer-note{font-size:.86rem;color:#666}
 @media(max-width:940px){.layout{grid-template-columns:1fr}.preview-wrap{position:static}.progress{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.row,.row3,.row4,.section-select-wrap,.competency-grid,.idea-grid{grid-template-columns:1fr}.p-row{display:block}.p-right{display:block;text-align:left}.progress{grid-template-columns:1fr}}
+@media(max-width:700px){body{padding-bottom:18px}.row,.row3,.row4,.section-select-wrap,.competency-grid,.idea-grid{grid-template-columns:1fr}.p-row{display:block}.p-right{display:block;text-align:left}.progress{grid-template-columns:1fr}.panel{padding:14px}.exp-head{align-items:center}.exp-head .danger{min-height:44px}.section-order-item{grid-template-columns:1fr}.order-actions{justify-content:flex-start}.download-box .actions{display:grid;grid-template-columns:1fr}.download-box .actions button,.download-box .actions .btn{width:100%;text-align:center;min-height:48px}.mobile-save-note{display:block;background:#fff8d9;border-left:4px solid var(--yellow);padding:9px 10px;margin:10px 0}.helper{padding:11px}.choice,.verb{min-height:44px}}
 </style>
 </head>
 <body>
@@ -43,7 +43,7 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
   <div class="eyebrow">Quick resume tool</div>
   <h1>Build a Resume from Scratch</h1>
   <p class="lead">Starting without a resume? Build a complete first draft here. Add your information, experiences, and skills, use optional bullet help when you need it, then download an editable Word resume.</p>
-  <div class="meta">Your entries stay in this browser on this device. You can edit the downloaded Word file before using it for an application.</div>
+  <div class="meta">Your work saves automatically in this browser on this device. You can return and keep editing before you create your Word resume.</div>
 </div>
 </header>
 <main id="builder">
@@ -87,6 +87,7 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
 
     <section class="panel">
       <div class="eyebrow">2 · Experiences</div><h2>Add experiences</h2>
+      <div class="notice"><strong>Your resume sections are unique to you.</strong>Use only the section names that help organize <em>your</em> experiences. You do not need every section, and your section order can be different from someone else's. Put the experience section most relevant to your goals higher.</div>
       <p class="hint">Paid work is only one option. You can include internships, leadership, involvement, volunteering, research, projects, athletics, teaching/clinical/field work, and other relevant experiences.</p>
       <details class="inline-help"><summary>Not sure what counts as experience? Show ideas</summary>
         <div class="idea-grid" id="ideaGrid"></div>
@@ -94,6 +95,12 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
       </details>
       <div id="experienceEditor"></div>
       <div class="actions"><button type="button" id="addExperience" class="secondary">+ Add an experience</button></div>
+      <div class="hint">If you use more than one experience section, you can arrange their order after you add them.</div>
+      <div id="sectionOrderWrap" class="section-order-wrap hidden" aria-live="polite">
+        <h3>Arrange your experience sections</h3>
+        <p class="hint">Use Move up / Move down to choose the order that best highlights your background. Experiences within each section will still be placed in reverse chronological order.</p>
+        <div id="sectionOrderList" class="section-order-list"></div>
+      </div>
     </section>
 
     <section class="panel">
@@ -110,11 +117,16 @@ details.inline-help{border-top:1px solid var(--line);margin-top:12px;padding-top
     </section>
 
     <section class="download-box" aria-labelledby="downloadTitle">
-      <div class="eyebrow">4 · Finish</div><h2 id="downloadTitle">Download your Word resume</h2>
+      <div class="eyebrow">4 · Finish</div><h2 id="downloadTitle">Create your Word resume</h2>
       <p>The Word file uses consistent margins, Arial type, bold role titles, true right-aligned dates, real bullets, and no decorative section lines. It remains fully editable.</p>
-      <div class="actions"><button id="downloadResume" type="button">Download My Resume (.docx)</button></div>
+      <div class="mobile-save-note"><strong>On a phone or tablet:</strong> after creating the file, use <strong>Share / Save</strong> to save it to Files, open it in Word, or send it to yourself.</div>
+      <div class="actions"><button id="downloadResume" type="button">Create My Word Resume</button></div>
       <div id="downloadStatus" class="status" aria-live="polite"></div>
-      <a id="downloadAgain" class="hidden" href="#">Download the Word resume again</a>
+      <div id="saveOptions" class="save-options hidden">
+        <strong>Your Word resume is ready.</strong>
+        <div class="actions"><button id="shareResume" type="button" class="hidden">Share / Save Resume</button><a id="downloadAgain" class="btn secondary" href="#">Download .docx</a></div>
+        <div class="hint">On iPhone/iPad, Share / Save opens the system share sheet so you can choose <strong>Save to Files</strong> or <strong>Open in Word</strong>. On a computer, Download .docx is usually simplest.</div>
+      </div>
     </section>
   </div>
 
@@ -147,9 +159,19 @@ const competencies={
   'Professionalism':['Managed','Completed','Maintained','Prioritized','Prepared','Delivered'],
   'Technology':['Created','Operated','Updated','Tracked','Designed','Automated']
 };
+const focusAreas={
+  'Communicate or help others':{competency:'Communication',verbs:['Communicated','Explained','Guided','Responded','Supported','Advised']},
+  'Solve problems or analyze':{competency:'Critical Thinking',verbs:['Analyzed','Resolved','Evaluated','Identified','Investigated','Improved']},
+  'Organize or lead':{competency:'Leadership',verbs:['Led','Coordinated','Organized','Directed','Delegated','Mentored']},
+  'Work with a team':{competency:'Teamwork',verbs:['Collaborated','Partnered','Supported','Contributed','Coordinated','Assisted']},
+  'Manage responsibilities':{competency:'Professionalism',verbs:['Managed','Prioritized','Maintained','Completed','Prepared','Delivered']},
+  'Use technology or create':{competency:'Technology',verbs:['Created','Designed','Updated','Tracked','Operated','Automated']},
+  'Learn, adapt, or improve':{competency:'Career & Self-Development',verbs:['Developed','Improved','Learned','Adapted','Pursued','Sought']}
+};
 const $=id=>document.getElementById(id);
-let data={version:2,fields:{},experiences:[]};
+let data={version:3,fields:{},experiences:[],sectionOrder:[]};
 let lastDownloadUrl='';
+let lastDownloadFile=null;
 
 function uid(){return (crypto?.randomUUID?.()||('e'+Date.now()+Math.random().toString(16).slice(2)))}
 function escapeHtml(v=''){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
@@ -161,8 +183,8 @@ function endKey(e){return e.current?999999:Number(`${e.endYear||'0'}${String(e.e
 function expLoc(e){return [e.expCity,capState(e.expState)].filter(Boolean).join(', ')}
 function field(id){return $(id)?.value?.trim?.()||''}
 
-function defaultExp(section='Work Experience',title=''){
-  return {id:uid(),title,org:'',section,startMonth:'',startYear:'',endMonth:'',endYear:'',current:false,expCity:'',expState:'',bullets:[''],helper:{open:false,competency:'',verb:'',action:'',context:'',data:'',result:''}};
+function defaultExp(section='',title=''){
+  return {id:uid(),title,org:'',section,startMonth:'',startYear:'',endMonth:'',endYear:'',current:false,expCity:'',expState:'',bullets:[''],helper:{open:false,focus:'',competency:'',verb:'',action:'',specifics:'',result:''}};
 }
 function load(){
   let saved=null;
@@ -171,19 +193,21 @@ function load(){
     data=saved;
     data.fields=data.fields||{};
     data.experiences=data.experiences.map(e=>({
-      ...defaultExp(e.section||'Work Experience',e.title||''),
+      ...defaultExp(e.section||'',e.title||''),
       ...e,
       expState:capState(e.expState||''),
       bullets:(Array.isArray(e.bullets)&&e.bullets.length?e.bullets:['']).map(noPeriod),
-      helper:{open:false,competency:'',verb:'',action:'',context:'',data:'',result:'',...(e.helper||{})}
+      helper:{open:false,focus:'',competency:'',verb:'',action:'',specifics:[e.helper?.specifics,e.helper?.context,e.helper?.data].filter(Boolean).join(' '),result:'',...(e.helper||{})}
     }));
+    if(!Array.isArray(data.sectionOrder)||!data.sectionOrder.length){data.sectionOrder=[];for(const e of data.experiences){if(e.section&&!data.sectionOrder.includes(e.section))data.sectionOrder.push(e.section)}}
     return;
   }
-  data={version:1,fields:{},experiences:[defaultExp('Work Experience','')]};
+  data={version:3,fields:{},experiences:[defaultExp('','')],sectionOrder:[]};
 }
 function save(){
   const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
   ids.forEach(id=>{if($(id))data.fields[id]=$(id).value});
+  syncSectionOrder();
   try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}catch(_){}
 }
 function restore(){Object.entries(data.fields||{}).forEach(([k,v])=>{if($(k))$(k).value=v});$('otherDegreeWrap').classList.toggle('hidden',$('degree').value!=='Other');if(field('programmingLanguages')||field('operatingSystems')||field('software')||field('spokenLanguages'))$('skillsDetails').open=true}
@@ -207,7 +231,7 @@ function renderExperiences(){
           <div class="field"><label>Organization, course, or setting</label><input data-field="org" value="${attr(e.org)}" placeholder="University Housing"></div>
         </div>
         <div class="section-select-wrap">
-          <div class="field"><label>Where should this appear on your resume?</label><select data-field="sectionChoice">${sectionOptions(e.section)}</select></div>
+          <div class="field"><label>Choose a section name that best fits this experience</label><select data-field="sectionChoice">${sectionOptions(e.section)}</select><div class="hint">There is no required set of sections. Choose the label that helps an employer understand this experience.</div></div>
           <div class="field ${custom?'':'hidden'}" data-custom-wrap><label>Custom section name</label><input data-field="customSection" value="${custom?attr(e.section):''}" placeholder="Campus Experience"></div>
         </div>
         <div class="row4">
@@ -227,61 +251,92 @@ function renderExperiences(){
   }).join('');
 }
 function renderHelper(e){
-  const h=e.helper||{};const verbs=h.competency?competencies[h.competency]||[]:[];
+  const h=e.helper||{};const area=h.focus?focusAreas[h.focus]:null;const verbs=area?.verbs||[];const live=helperBullet(h);
   return `<section class="helper" aria-label="Bullet writing help">
-    <h4>Build one bullet</h4><div class="hint">Choose one competency to focus the bullet. The competency itself will not appear on your resume.</div>
-    <div class="field"><label>NACE competency</label><select data-helper="competency"><option value="">Choose one</option>${Object.keys(competencies).map(c=>`<option value="${attr(c)}"${h.competency===c?' selected':''}>${escapeHtml(c)}</option>`).join('')}</select></div>
-    ${h.competency?`<div class="field"><label>Choose a power verb</label><div class="verb-grid">${verbs.map(v=>`<button type="button" class="verb" data-verb="${attr(v)}" aria-pressed="${h.verb===v?'true':'false'}">${escapeHtml(v)}</button>`).join('')}</div><input data-helper="verb" value="${attr(h.verb||'')}" placeholder="Or type your own power verb"></div>`:''}
-    <div class="field"><label>What did you do?</label><textarea data-helper="action" placeholder="Example: resolved customer questions and scheduling issues">${escapeHtml(h.action||'')}</textarea></div>
-    <div class="field"><label>How, with what, or for whom? <span class="req">(optional)</span></label><input data-helper="context" value="${attr(h.context||'')}" placeholder="Example: using scheduling software and policy resources"></div>
-    <div class="data-nudge"><strong>Could a number make this clearer?</strong><span class="hint">Use data when it adds useful scale—such as people served, frequency, team size, items, dollars, time, or percentage change. Skip it if a number would not help.</span></div>
-    <div class="field"><label>Scale or data <span class="req">(optional)</span></label><input data-helper="data" value="${attr(h.data||'')}" placeholder="Example: 20–30 customers per shift"></div>
-    <div class="field"><label>Result, purpose, or outcome <span class="req">(optional)</span></label><input data-helper="result" value="${attr(h.result||'')}" placeholder="Example: to keep appointments running on time"></div>
+    <h4>Build one strong bullet</h4>
+    <div class="helper-pattern"><strong>Simple pattern</strong><span>Power verb + what you did + useful specifics or scale + why it mattered</span></div>
+    <div class="field"><label>What kind of contribution are you describing?</label><div class="competency-grid">${Object.keys(focusAreas).map(f=>`<button type="button" class="choice" data-focus="${attr(f)}" aria-pressed="${h.focus===f?'true':'false'}">${escapeHtml(f)}</button>`).join('')}</div></div>
+    ${area?`<div class="skill-note">Related transferable skill: <strong>${escapeHtml(area.competency)}</strong>. You do not need to name the competency on your resume.</div><div class="field"><label>Start with a strong power verb</label><div class="verb-grid">${verbs.map(v=>`<button type="button" class="verb" data-verb="${attr(v)}" aria-pressed="${h.verb===v?'true':'false'}">${escapeHtml(v)}</button>`).join('')}</div><input data-helper="verb" value="${attr(h.verb||'')}" placeholder="Or type your own power verb"></div>`:''}
+    <div class="field"><label>What did you do?</label><textarea data-helper="action" placeholder="Example: handled customer questions and scheduling issues">${escapeHtml(h.action||'')}</textarea><div class="hint">Describe the action—not just the duty title. The builder will start this phrase lowercase automatically.</div></div>
+    <div class="field"><label>Add useful specifics <span class="req">(optional)</span></label><input data-helper="specifics" value="${attr(h.specifics||'')}" placeholder="Example: for 20–30 customers per shift using scheduling software"><div class="hint">Add who/what, tools, frequency, or scale when it makes the work clearer. This phrase will start lowercase automatically.</div></div>
+    <details class="inline-help"><summary>Could a number make this stronger?</summary><div class="data-nudge"><strong>Use data only when it is real and useful.</strong><span class="hint">Think about people served, frequency, team size, items, dollars, time, events, or percentage change. Do not invent a number just to have one.</span></div></details>
+    <div class="field"><label>Why did it matter? <span class="req">(optional)</span></label><input data-helper="result" value="${attr(h.result||'')}" placeholder="Example: to keep appointments on schedule"><div class="hint">A purpose or result can show why the work mattered. Skip this when it would be repetitive. This phrase will start lowercase automatically.</div></div>
+    <div class="helper-preview"><strong>Your bullet so far</strong><span data-live-bullet class="${live?'':'empty-preview'}">${escapeHtml(live||'Choose a contribution, power verb, and describe what you did.')}</span></div>
     <div class="actions"><button type="button" class="mini" data-generate="${attr(e.id)}">Add this bullet to my experience</button></div>
     <div class="generated ${h.generated?'':'hidden'}" data-generated><strong>Bullet added</strong><span>${escapeHtml(h.generated||'')}</span></div>
   </section>`;
 }
+function lowerBulletFill(s=''){
+  const text=String(s||'').trim();
+  if(!text)return'';
+  const first=(text.match(/^\S+/)||[''])[0].replace(/^["'“‘(]+|[,:;.!?)"'”’]+$/g,'');
+  const preserve=new Set(['Excel','PowerPoint','Word','Microsoft','Google','Adobe','Canva','LinkedIn','Handshake','Salesforce','Tableau','Python','Java','JavaScript','SPSS','SQL','HTML','CSS','UI','UX']);
+  const looksLikeAcronym=/^[A-Z0-9&]{2,}(?:[\/-][A-Z0-9&]{2,})*$/.test(first);
+  const hasInternalCapital=/^[A-Z][a-z0-9]*[A-Z][A-Za-z0-9]*$/.test(first);
+  if(preserve.has(first)||looksLikeAcronym||hasInternalCapital)return text;
+  const i=text.search(/[A-Za-z]/);
+  if(i<0)return text;
+  return text.slice(0,i)+text.charAt(i).toLowerCase()+text.slice(i+1);
+}
 function helperBullet(h){
-  const verb=(h.verb||'').trim();let action=(h.action||'').trim();if(!verb||!action)return'';
-  action=action.replace(/^\s*[A-Z][a-z]+\s+/,'');
-  const parts=[`${verb} ${action}`];
-  if((h.context||'').trim())parts.push((h.context||'').trim());
-  if((h.data||'').trim())parts.push((h.data||'').trim());
-  if((h.result||'').trim())parts.push((h.result||'').trim());
-  return noPeriod(parts.join(', ').replace(/\s+,/g,','));
+  let verb=(h.verb||'').trim();let action=(h.action||'').trim();if(!verb||!action)return'';
+  verb=verb.charAt(0).toUpperCase()+verb.slice(1);
+  const verbPattern=new RegExp('^'+verb.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\s+','i');
+  action=action.replace(verbPattern,'').trim();
+  const parts=[`${verb} ${lowerBulletFill(action)}`];
+  if((h.specifics||'').trim())parts.push(lowerBulletFill(h.specifics));
+  if((h.result||'').trim())parts.push(lowerBulletFill(h.result));
+  return noPeriod(parts.join(' ').replace(/\s+/g,' '));
+}
+function updateHelperPreview(card,exp){const target=card?.querySelector('[data-live-bullet]');if(!target)return;const b=helperBullet(exp.helper||{});target.textContent=b||'Choose a contribution, power verb, and describe what you did.';target.classList.toggle('empty-preview',!b)}
+function syncSectionOrder(){
+  const used=[];for(const e of data.experiences){const s=String(e.section||'').trim();if(s&&!used.includes(s))used.push(s)}
+  if(!Array.isArray(data.sectionOrder))data.sectionOrder=[];
+  data.sectionOrder=data.sectionOrder.filter(s=>used.includes(s));
+  used.forEach(s=>{if(!data.sectionOrder.includes(s))data.sectionOrder.push(s)});
+}
+function renderSectionOrder(){
+  syncSectionOrder();const wrap=$('sectionOrderWrap'),list=$('sectionOrderList');const used=data.sectionOrder.filter(s=>data.experiences.some(e=>(e.title||e.org)&&String(e.section||'').trim()===s));
+  if(used.length<2){wrap.classList.add('hidden');list.innerHTML='';return}
+  wrap.classList.remove('hidden');
+  list.innerHTML=used.map((s,i)=>`<div class="section-order-item"><strong>${escapeHtml(s)}</strong><div class="order-actions"><button type="button" class="mini secondary" data-order-up="${i}" ${i===0?'disabled':''} aria-label="Move ${attr(s)} up">↑ Move up</button><button type="button" class="mini secondary" data-order-down="${i}" ${i===used.length-1?'disabled':''} aria-label="Move ${attr(s)} down">↓ Move down</button></div></div>`).join('');
 }
 
-$('ideaGrid').addEventListener('click',e=>{const b=e.target.closest('[data-idea]');if(!b)return;data.experiences.push(defaultExp(b.dataset.section,b.dataset.idea==='Other experience'?'':b.dataset.idea));save();renderExperiences();renderPreview();document.querySelector('.exp-card:last-of-type')?.scrollIntoView({behavior:'smooth',block:'center'})});
-$('addExperience').addEventListener('click',()=>{data.experiences.push(defaultExp('Work Experience',''));save();renderExperiences();renderPreview()});
+$('ideaGrid').addEventListener('click',e=>{const b=e.target.closest('[data-idea]');if(!b)return;data.experiences.push(defaultExp(b.dataset.section,b.dataset.idea==='Other experience'?'':b.dataset.idea));save();renderExperiences();renderSectionOrder();renderPreview();document.querySelector('.exp-card:last-of-type')?.scrollIntoView({behavior:'smooth',block:'center'})});
+$('addExperience').addEventListener('click',()=>{data.experiences.push(defaultExp('',''));save();renderExperiences();renderSectionOrder();renderPreview()});
 $('experienceEditor').addEventListener('input',e=>{
   const card=e.target.closest('.exp-card');if(!card)return;const exp=data.experiences.find(x=>String(x.id)===String(card.dataset.id));if(!exp)return;
   if(e.target.dataset.field){const k=e.target.dataset.field;if(k==='expState')e.target.value=capState(e.target.value);if(k==='customSection'){exp.section=e.target.value}else if(k!=='sectionChoice'&&k!=='current')exp[k]=e.target.value}
   if(e.target.dataset.bullet!==undefined){exp.bullets[Number(e.target.dataset.bullet)]=noPeriod(e.target.value)}
-  if(e.target.dataset.helper){exp.helper=exp.helper||{};const hk=e.target.dataset.helper;exp.helper[hk]=e.target.value;if(hk==='competency'){exp.helper.verb='';save();renderExperiences();return}}
-  save();renderPreview();
+  if(e.target.dataset.helper){exp.helper=exp.helper||{};const hk=e.target.dataset.helper;exp.helper[hk]=e.target.value;save();updateHelperPreview(card,exp);return}
+  save();renderSectionOrder();renderPreview();
 });
 $('experienceEditor').addEventListener('change',e=>{
   const card=e.target.closest('.exp-card');if(!card)return;const exp=data.experiences.find(x=>String(x.id)===String(card.dataset.id));if(!exp)return;
   if(e.target.dataset.field && !['sectionChoice','current'].includes(e.target.dataset.field)){const k=e.target.dataset.field;if(k==='expState')e.target.value=capState(e.target.value);exp[k]=e.target.value}
-  if(e.target.dataset.field==='sectionChoice'){if(e.target.value==='__custom'){exp.section='';card.querySelector('[data-custom-wrap]')?.classList.remove('hidden')}else{exp.section=e.target.value;card.querySelector('[data-custom-wrap]')?.classList.add('hidden')}}
+  if(e.target.dataset.field==='sectionChoice'){if(e.target.value==='__custom'){exp.section='';card.querySelector('[data-custom-wrap]')?.classList.remove('hidden')}else{exp.section=e.target.value;card.querySelector('[data-custom-wrap]')?.classList.add('hidden');syncSectionOrder()}}
   if(e.target.dataset.field==='current'){exp.current=e.target.checked;if(exp.current){exp.endMonth='';exp.endYear=''}renderExperiences()}
-  save();renderPreview();
+  save();renderSectionOrder();renderPreview();
 });
 $('experienceEditor').addEventListener('click',e=>{
   const card=e.target.closest('.exp-card');const id=card?.dataset.id;const exp=data.experiences.find(x=>String(x.id)===String(id));
-  if(e.target.dataset.remove){data.experiences=data.experiences.filter(x=>String(x.id)!==String(e.target.dataset.remove));save();renderExperiences();renderPreview();return}
+  if(e.target.dataset.remove){data.experiences=data.experiences.filter(x=>String(x.id)!==String(e.target.dataset.remove));save();renderExperiences();renderSectionOrder();renderPreview();return}
   if(!exp)return;
   if(e.target.dataset.addBullet){exp.bullets.push('');save();renderExperiences();return}
   if(e.target.dataset.deleteBullet!==undefined){exp.bullets.splice(Number(e.target.dataset.deleteBullet),1);if(!exp.bullets.length)exp.bullets=[''];save();renderExperiences();renderPreview();return}
   if(e.target.dataset.toggleHelper){exp.helper=exp.helper||{};exp.helper.open=!exp.helper.open;save();renderExperiences();return}
+  const focus=e.target.closest('[data-focus]');if(focus){exp.helper=exp.helper||{};exp.helper.focus=focus.dataset.focus;const area=focusAreas[exp.helper.focus];exp.helper.competency=area?.competency||'';exp.helper.verb='';save();renderExperiences();return}
   const verb=e.target.closest('[data-verb]');if(verb){exp.helper=exp.helper||{};exp.helper.verb=verb.dataset.verb;save();renderExperiences();return}
   if(e.target.dataset.generate){const bullet=helperBullet(exp.helper||{});if(!bullet){alert('Choose or enter a power verb and describe what you did first.');return}const blank=exp.bullets.findIndex(x=>!String(x||'').trim());if(blank>=0)exp.bullets[blank]=bullet;else exp.bullets.push(bullet);exp.helper.generated=bullet;save();renderExperiences();renderPreview();return}
+});
+$('sectionOrderList').addEventListener('click',e=>{
+  const up=e.target.closest('[data-order-up]'),down=e.target.closest('[data-order-down]');if(!up&&!down)return;syncSectionOrder();const i=Number((up||down).dataset[up?'orderUp':'orderDown']);const j=up?i-1:i+1;if(i<0||j<0||i>=data.sectionOrder.length||j>=data.sectionOrder.length)return;[data.sectionOrder[i],data.sectionOrder[j]]=[data.sectionOrder[j],data.sectionOrder[i]];save();renderSectionOrder();renderPreview();
 });
 
 function getGroups(){
   const g={};data.experiences.forEach(e=>{if(!e.section||(!e.title&&!e.org))return;(g[e.section]??=[]).push(e)});Object.values(g).forEach(arr=>arr.sort((a,b)=>endKey(b)-endKey(a)));return g;
 }
-function orderedSections(groups){const standard=[...sections];const customs=Object.keys(groups).filter(x=>!standard.includes(x));return [...standard,...customs].filter(x=>groups[x]?.length)}
+function orderedSections(groups){syncSectionOrder();const ordered=data.sectionOrder.filter(x=>groups[x]?.length);Object.keys(groups).forEach(x=>{if(!ordered.includes(x))ordered.push(x)});return ordered}
 function educationLine(){const degree=field('degree')==='Other'?field('otherDegree'):field('degree');return [degree,field('major')].filter(Boolean).join(' ')}
 function gradLine(){return [field('gradMonth'),field('gradYear')].filter(Boolean).join(' ')}
 function gpaLine(){const g=field('gpa').replace(/\/4\.0$/,'').trim();return g?`${g}/4.0`:''}
@@ -344,14 +399,15 @@ function makeWordDocument(){
   return new Document({sections:[{properties:{page:{size:{width:12240,height:15840,orientation:PageOrientation.PORTRAIT},margin:{top:936,right:936,bottom:936,left:936,header:360,footer:360,gutter:0}}},children}]});
 }
 function filename(){const n=field('name').replace(/[^A-Za-z0-9\s_-]/g,'').replace(/\s+/g,'_').replace(/_+/g,'_');return `${n||'Resume'}_Resume.docx`}
-$('downloadResume').addEventListener('click',async()=>{save();if(!validate())return;const btn=$('downloadResume');btn.disabled=true;$('downloadStatus').textContent='Creating your Word resume…';try{const blob=await window.docx.Packer.toBlob(makeWordDocument());if(lastDownloadUrl)URL.revokeObjectURL(lastDownloadUrl);lastDownloadUrl=URL.createObjectURL(blob);const fn=filename();const again=$('downloadAgain');again.href=lastDownloadUrl;again.download=fn;again.classList.remove('hidden');const a=document.createElement('a');a.href=lastDownloadUrl;a.download=fn;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();$('downloadStatus').textContent=`Your formatted Word resume is ready: ${fn}`}catch(err){console.error(err);$('downloadStatus').textContent='The Word file could not be created. Refresh the page and try again.'}finally{btn.disabled=false}});
+$('downloadResume').addEventListener('click',async()=>{save();if(!validate())return;const btn=$('downloadResume');btn.disabled=true;$('downloadStatus').textContent='Creating your Word resume…';$('saveOptions').classList.add('hidden');try{const blob=await window.docx.Packer.toBlob(makeWordDocument());if(lastDownloadUrl)URL.revokeObjectURL(lastDownloadUrl);lastDownloadUrl=URL.createObjectURL(blob);const fn=filename();lastDownloadFile=new File([blob],fn,{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});const again=$('downloadAgain');again.href=lastDownloadUrl;again.download=fn;$('saveOptions').classList.remove('hidden');const share=$('shareResume');const canShare=!!(navigator.share&&navigator.canShare&&navigator.canShare({files:[lastDownloadFile]}));share.classList.toggle('hidden',!canShare);const mobile=matchMedia('(max-width: 700px)').matches||/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);if(!mobile){const a=document.createElement('a');a.href=lastDownloadUrl;a.download=fn;document.body.appendChild(a);a.click();a.remove();$('downloadStatus').textContent=`Your formatted Word resume is ready: ${fn}`}else{$('downloadStatus').textContent='Your Word resume is ready. Choose Share / Save or Download .docx below.'}}catch(err){console.error(err);$('downloadStatus').textContent='The Word file could not be created. Refresh the page and try again.'}finally{btn.disabled=false}});
+$('shareResume').addEventListener('click',async()=>{if(!lastDownloadFile)return;try{await navigator.share({files:[lastDownloadFile],title:'Resume',text:'My editable Word resume'});$('downloadStatus').textContent='Resume shared or saved.'}catch(err){if(err?.name!=='AbortError'){console.error(err);$('downloadStatus').textContent='Share was not available. Use Download .docx instead.'}}});
 
 function bindFields(){
   const ids=['name','email','phone','linkedin','streetAddress','city','state','school','schoolLocation','degree','otherDegree','major','gradMonth','gradYear','minor','certificates','gpa','programmingLanguages','operatingSystems','software','spokenLanguages'];
   ids.forEach(id=>$(id).addEventListener('input',()=>{if(id==='state')$('state').value=capState($('state').value);save();renderPreview()}));
   $('degree').addEventListener('change',()=>{$('otherDegreeWrap').classList.toggle('hidden',$('degree').value!=='Other');save();renderPreview()});
 }
-fillGrad();load();restore();renderIdeas();renderExperiences();bindFields();renderPreview();
+fillGrad();load();restore();renderIdeas();renderExperiences();renderSectionOrder();bindFields();renderPreview();
 })();
 </script>
 </body>
